@@ -1,0 +1,20 @@
+#alertbox{
+	padding-top: 70px;
+}
+#alertbox h3{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+#visitorCounts .panel-body{
+	padding-left: 0px;
+	padding-right: 30px;
+}
+.progress{
+	margin-bottom:15px;
+}
+.wh64 img{
+	width: 64px;
+}
+.mar_15{
+	margin:15px 0;
+}

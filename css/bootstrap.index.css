@@ -214,3 +214,9 @@ body{
 	font-weight: 400;
 	line-height:30px
 }
+
+
+/*轮播*/
+#myCarousel img{
+  width: 100%;
+}

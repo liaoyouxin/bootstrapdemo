@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<!--开启IE8渲染模式-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--配置视窗-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<!--引入bootstrap.css-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--引入自己的css-->
+	<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+	<!--导航栏-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand">Maizi Admin</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active">
+						<a href="">
+							<span class="glyphicon glyphicon-home"></span>
+							&nbsp;后台首页
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="glyphicon glyphicon-user"></span>
+							&nbsp;用户管理
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="glyphicon glyphicon-list-alt"></span>
+							&nbsp;内容管理
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="glyphicon glyphicon-tag"></span>
+							&nbsp;标签管理
+						</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							admin <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="">
+								<span class="glyphicon glyphicon-heart"></span>
+								&nbsp;我的关注
+							</a></li>
+							<li><a href="">
+								<span class="glyphicon glyphicon-user"></span>
+								&nbsp;我的粉丝
+							</a></li>
+						</ul>
+					</li>
+					<li><a href=""><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--提示框-->
+	<section id="alertbox">
+		<div class="container">
+			<div class="alert alert-warning alert-danger" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			  	<span aria-hidden="true">&times;</span>
+			  </button>
+			  <h3>网站程序有漏洞,急需修复！</h3>
+			  <p>当前版本程序(v 1.22)存在严重的安全问题，容易被攻击，请立即修复。</p>
+			  <p>
+			  	<button type="button" class="btn btn-danger">立即修复</button>
+			  	<button type="button" class="btn btn-default" data-dismiss="alert">稍后处理</button>
+			  </p>
+			</div>
+		</div>
+	</section>
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+					    <div class="panel-heading">网站数据统计</div>
+					    <div class="panel-body">
+					    	<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>统计项目</th>
+										<th>昨日</th>
+										<th>今日</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">注册会员</td>
+										<td>200</td>
+										<td>230</td>
+									</tr>
+									<tr>
+										<th scope="row">注册会员</td>
+										<td>200</td>
+										<td>230</td>
+									</tr>
+									<tr>
+										<th scope="row">注册会员</td>
+										<td>200</td>
+										<td>230</td>
+									</tr>
+									<tr>
+										<th scope="row">注册会员</td>
+										<td>200</td>
+										<td>230</td>
+									</tr>
+								</tbody>
+							</table>
+					    </div> 
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">网站热帖</div>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="">最新最全的教程</a>
+								</li>
+								<li class="list-group-item">
+									<a href="">最新最全的教程</a>
+								</li>
+								<li class="list-group-item">
+									<a href="">最新最全的教程</a>
+								</li>
+								<li class="list-group-item">
+									<a href="">最新最全的教程</a>
+								</li>
+								<li class="list-group-item">
+									<a href="">最新最全的教程</a>
+								</li>
+								<li class="list-group-item">
+									<a href="">最新最全的教程</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+				<div class="col-md-6" id="visitorCounts">
+					<div class="panel panel-default">
+						<div class="panel-heading">今日访客统计</div>
+						<div class="panel-body">
+							<canvas id="canvas" class="col-md-12"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">服务器状态</div>
+						<div class="panel-body">
+							    <p>内存使用率：40%</p>
+							    <div class="progress">
+								  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								    <span class="sr-only">40% Complete (success)</span>
+								  </div>
+								</div>
+								<p>内存使用率：40%</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+								    <span class="sr-only">20% Complete</span>
+								  </div>
+								</div>
+								<p>内存使用率：40%</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+								    <span class="sr-only">60% Complete (warning)</span>
+								  </div>
+								</div>
+								<p>内存使用率：40%</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+								    <span class="sr-only">80% Complete (danger)</span>
+								  </div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">团队留言板</div>
+						<div class="panel-body">
+								<div class="col-md-7">
+									<div class="media well wh64">
+									  <div class="media-left">
+									    <a href="#">
+									      <img class="media-object" src="image/a.png" alt="">
+									    </a>
+									  </div>
+									  <div class="media-body">
+									    <h4 class="media-heading">小菜鸟</h4>
+									    这道题又不会做了┭┮﹏┭┮
+									  </div>
+									</div>
+									<div class="media well wh64">
+									 <div class="media-body text-right">
+									    <h4 class="media-heading">大牛</h4>
+									    说出你的问题^_^
+									  </div>
+									  <div class="media-right">
+									    <a href="#">
+									      <img class="media-object" src="image/b.png" alt="">
+									    </a>
+									  </div>
+									</div>
+									<div class="media well wh64">
+									  <div class="media-left">
+									    <a href="#">
+									      <img class="media-object" src="image/a.png" alt="">
+									    </a>
+									  </div>
+									  <div class="media-body">
+									    <h4 class="media-heading">小菜鸟</h4>
+									    我爱的人不爱我，怎么办？
+									  </div>
+									</div>
+									<div class="media well wh64">
+									  <div class="media-body text-right">
+									    <h4 class="media-heading">大牛</h4>
+									    不爱我就拉倒！
+									  </div>
+									  <div class="media-right">
+									    <a href="#">
+									      <img class="media-object" src="image/b.png" alt="">
+									    </a>
+									  </div>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<form action="#">
+										<div class="form-group">
+											<label for="textarea">输入留言内容</label>
+											<textarea class="form-control" rows="5" cols="10" name="textarea" id="textarea"></textarea>	
+											<button type="submit" class="btn btn-default mar_15">留言</button>
+										</div>
+									</form>
+									<div class="panel panel-default">
+										<div class="panel-heading">团队联系手册</div>
+										<ul class="list-group">
+											<li class="list-group-item">
+												吴亦凡 ： 
+												<span class="glyphicon glyphicon-phone"></span>&nbsp;13298574957
+											</li>
+											<li class="list-group-item">
+												吴亦凡 ： 
+												<span class="glyphicon glyphicon-phone"></span>&nbsp;13298574957
+											</li>
+											<li class="list-group-item">
+												吴亦凡 ： 
+												<span class="glyphicon glyphicon-phone"></span>&nbsp;13298574957
+											</li>
+											<li class="list-group-item">
+												吴亦凡 ： 
+												<span class="glyphicon glyphicon-phone"></span>&nbsp;13298574957
+											</li>
+											<li class="list-group-item">
+												吴亦凡 ： 
+												<span class="glyphicon glyphicon-phone"></span>&nbsp;13298574957
+											</li>
+										</ul>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<!--引入jq-->
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!--引入bootstrap.js-->
+	<script src="js/bootstrap.js"></script>
+	<!--chart.js-->
+	<script src="js/Chart.js"></script>
+	<script src="js/admin.js"></script>
+</body>
+</html>
