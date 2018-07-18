@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<!--开启IE8标准渲染模式-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--配置视窗-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<!--引入bootstrap.css-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--引入自己的css-->
+	<link rel="stylesheet" href="css/bootstrap.index.css">
+	<title>bootstrap</title>
+</head>
+<body>
+    <!--导航栏-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand">小新Home</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#Home">首页</a></li>
+                    <li><a href="#bbs">论坛</a></li>
+                    <li><a href="#h5">html5</a></li>
+                    <li><a href="#bootstrap">bootstrap</a></li>
+                    <li><a href="#Home">最新课程</a></li>
+                    <li><a href="#Home">APP下载</a></li>
+                    <li><a href="#Home">联系我们</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            更多
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">帮助</a></li>
+                            <li><a href="">奖赏我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--第一屏-->
+    <section id="home">
+        <div class="lvjing">
+            <div class="container">
+                <div class="row">
+                    <h2>遇见最好的自己</h2>
+                    <p>茫茫人海你是谁,我在等你。</p>
+                    <img src="image/onview/home-banner.png" class="img-responsive" alt="/">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--bbs-->
+    <section id="bbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="">
+                        <img src="image/a.png" class="img-responsive">
+                        <h2>Android开发</h2>
+                        <p>Android开发给你最新、最前沿、最有效的技术教学,让你轻松走向人生巅峰！</p>
+                    </a>
+                </div>
+                 <div class="col-md-4">
+                    <a href="">
+                       <img src="image/i.png" class="img-responsive">
+                        <h2>IOS开发</h2>
+                        <p>IOS开发给你最新、最前沿、最有效的技术教学,让你轻松走向人生巅峰！</p> 
+                    </a>
+                </div>   
+                 <div class="col-md-4">
+                    <a href="">
+                       <img src="image/b.png" class="img-responsive">
+                        <h2>嵌入式开发</h2>
+                        <p>嵌入式开发给你最新、最前沿、最有效的技术教学,让你轻松走向人生巅峰！</p> 
+                    </a>
+                </div>         
+            </div>
+        </div>
+    </section>
+	<!--引入jq-->
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!--引入bootstrap.js-->
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

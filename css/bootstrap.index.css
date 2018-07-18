@@ -1,0 +1,216 @@
+body{
+	font-family: "微软雅黑"
+}
+.navbar{
+	background: #fff;
+	border: none;
+	box-shadow: 0px 2px 8px 0px rgba(50,50,50,.25)
+}
+.navbar .navbar-brand{
+	font-size: 30px;
+	font-weight: bold;
+	color: #40D2B1;
+	height: 70px;
+	line-height: 35px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: bold;
+}
+.navbar-default .navbar-toggle {
+    border-color: #40D2B1;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #40D2B1;
+}
+/*home*/
+#home{
+	background: url('../image/onview/home-bg.jpg');
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	margin-top: 70px;
+}
+.lvjing{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	padding: 115px 0;
+}
+#home h1{
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+#home p{
+	font-weight: 400;
+	line-height: 35px;
+}
+#home img{
+	display: inline-block;
+}
+
+/*bbs*/
+#bbs{
+	text-align:center;
+	padding: 80px;
+}
+#bbs a{
+	color: #333;
+	text-decoration: none;
+}
+#bbs img{
+	margin: auto;
+}
+#bbs .col-md-4{
+	padding:15px;
+}
+#bbs .col-md-4:hover{
+    background: #f1f1f1;
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+/*h5*/
+#h5{
+	padding: 80px 0;
+	text-align:center;
+	background:#f1f1f1; 
+}
+#h5 h2{
+    margin-bottom:30px
+}
+#h5 img{
+	margin:auto;
+}
+#h5 p{
+	font-size:16px;
+	font-weight: 400;
+	line-height:32px;
+}
+#h5 .h5-icon{
+	display: inline-block;
+	padding:10px;
+	background:#40D2B1;
+	border-radius: 20px;
+	color: #fff; 
+	margin-right: 10px;
+}
+
+/*bootstrap*/
+#bootstrap{
+	padding: 80px 0;
+	text-align:center;
+}
+#bootstrap h2{
+    margin-bottom:30px
+}
+#bootstrap img{
+	margin:auto;
+}
+#bootstrap p{
+	font-size:16px;
+	font-weight: 400;
+	line-height:32px;
+}
+#bootstrap .bootstrap-icon{
+	display: inline-block;
+	padding:10px;
+	background:#40D2B1;
+	border-radius: 20px;
+	color: #fff; 
+	margin-right: 10px;
+}
+
+/*course*/
+#course{
+	padding:80px 0;
+	background:#f1f1f1; 
+	text-align:center;
+}
+#course h2{
+	margin-bottom:20px;
+}
+#course .course-item{
+	padding-bottom:20px;
+	margin-top:20px;
+	background-color: #fff;
+}
+#course img{
+	display: inline-block;
+	width: 100%;
+}
+#course a{
+	margin-top:20px;
+	display: inline-block;
+	padding:5px 25px;
+	background:#fff;
+	color: #40D2B1;
+	border: 1px solid #40D2B1;
+	border-radius: 3px;
+	text-decoration:none;
+}
+
+/*app*/
+#app{
+	padding:80px 0;
+}
+#app h2{
+	margin-bottom:20px;
+}
+#app p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height:32px;
+}
+#app a{
+	display: inline-block;
+	padding:3px 10px;
+	background: #40D2B1;
+	color: #fff;
+	text-decoration: none;
+	margin:15px 15px 15px 0;
+
+}
+#app a>span{
+	margin-right:10px;
+}
+
+/*contact*/
+#contact{
+	background: url('../image/contact-bg.png');
+	color: #fff;
+}
+#contact p{
+	line-height:30px;
+}
+#contact .form-control{
+	border: 1px solid #fff;
+	border-radius: 0;
+	margin-top:20px;
+	height: 40px;
+}
+#contact .form-textarea{
+	border: 1px solid #fff;
+	border-radius: 0;
+	margin-top:20px;
+	width: 100%;
+	height: 140px;
+	padding:10px;
+	color: #333;
+}
+#contact .form-btn{
+	padding:8px 100px;
+	margin:20px auto;
+	background: #40D2B1;
+	border:none;
+}
+
+/*footer*/
+#footer{
+	padding:20px;
+	text-align:center;
+	font-weight: 400;
+	line-height:30px
+}
